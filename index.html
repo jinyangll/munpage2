@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>introduce-munji</title>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <input type="button" value="night" style= "background-color: #261A15; text-align: center;" id="night_day" onclick="
+    var target = document.querySelector('body');
+    var links = document.querySelectorAll('#grid a')
+    if (this.value === 'night'){
+    target.style.backgroundColor = '#261A15';
+    target.style.color = 'white';
+    document.querySelector('#title').style.color = '#f2c777' ;
+    this.value = 'day'
+    this.style.backgroundColor = '#f2c777';
+    for (var i = 0; i < links.length; i++) {
+            links[i].style.color = 'white';
+        }
+    }
+    else {
+    target.style.backgroundColor = 'white';
+    target.style.color = 'black';
+    document.querySelector('#title').style.color = '#594327' ;
+    this.value = 'night'
+    this.style.backgroundColor = '#261A15';
+    for (var i = 0; i < links.length; i++) {
+            links[i].style.color = '#333';
+        }
+    
+    }
+    ">
+    
+    <h1><a href="index.html" style="color: #594327; text-decoration: none;" id="title">Munji's <br>HomePage</a></h1>
+    <div class = btns>
+
+        <!-- <input type="button" value="night" style="background-color: #261A15;" id="night_day" onclick="
+            if (document.querySelector('#night_day').value === 'night'){
+            document.querySelector('body').style.backgroundColor = '#261A15';
+            document.querySelector('body').style.color = 'white';
+            document.querySelector('#title').style.color = '#f2c777' ;
+            document.querySelector('#night_day').value = 'day'
+            }
+            else {
+            document.querySelector('body').style.backgroundColor = 'white';
+            document.querySelector('#title').style.color = '#594327' ;
+            document.querySelector('body').style.color = 'black';
+            document.querySelector('#night_day').value = 'night'
+            }
+        "> -->
+        
+
+
+    <table width = "800px" class="table" >
+        <th style="width: 200px;"><a href="information.html">Information</a></th>
+        <th style="width: 200px;"><a href="socute.html">So Cute</a></th>
+        <th style="width: 200px;"><a href="tmi.html">TMI</a></th>
+        <th style="width: 200px;"><a href="gallery.html">Gallery</a></th>
+    </table>
+        
+    
+    <img src="opening.jpg"  loading="lazy" >
+    <!-- <div id="grid">
+    
+        <span><a href="information.html">Information</a></span>
+        <span><a href="socute.html">So Cute</a></span>
+        <span><a href="tmi.html">TMI</a></span>
+        <span style="border-bottom: 3px #BFA78A solid; padding-bottom: 50px;"><a href="gallery.html">Gallery</a></span>   
+
+    </div> -->
+
+
+    <div class="center-div">
+        <span style="font-size: 17px; 
+        text-align: center; font-weight: lighter; " class="bar" 
+    >Welcome to Munji's hompage.<br> You can get many information about Munji here !</span>
+    </div>
+    
+    
+    </div>
+           <br><br><br><br><br>
+    </div>
+
+</body>
+
+</html>

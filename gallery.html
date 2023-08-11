@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>gallery-munji</title>
+    <meta charset="utf-8">
+</head>
+<body>
+    <div>
+        <h1><a href="index.html" style="color: #594327; text-decoration: none;">Munji's <br>HomePage</a></h1>
+        </div>
+        <div>
+        <img src="opening.jpg" width="600px" class="img">
+        </div>
+        <div id="grid">
+    
+            <span><a href="information.html">Information</a></span>
+            <span><a href="socute.html">So Cute</a></span>
+            <span><a href="tmi.html">TMI</a></span>
+            <span style = "padding-bottom: 50px;"><a href="gallery.html">Gallery</a></span>        
+        </div>
+    <div>
+        <p>
+            <h1 class="subtitle">Gallery</h1>
+
+        </p>
+    </div>
+
+    <div id="gallery">
+        <div style="padding-bottom: 30px;">
+            <img src="bbosilegi.jpg" width="250px" class="item">
+            <img src="dontstudy.jpg" width="250px"class="item">
+            <img src="fav.jpg" width="250px"class="item">
+        </div>
+        
+        <div style="padding-bottom: 30px;">
+            <img src="dg.jpg" width="250px"class="item">
+            <img src="totoro.jpg" width="250px"class="item">
+            <img src="box.jpg" width="250px"class="item">
+        </div>
+        
+        
+    </div>
+    
+
+    <div>
+        <br><br><br>
+    </div>
+</body>
+
+<style>
+    h1 {
+        font-size: 100px;
+        text-align: center;
+        color:#594327;
+    }
+
+    ul {
+        font-size: 25px;
+    }
+    .img {
+    display: block;
+    padding-top: 50px;
+    padding-bottom: 100px;
+    width: 100%;
+    
+    }
+
+    .subtitle {
+        font-size: 32px ;
+        padding-top: 50px;
+    }
+
+    #gallery {
+        display: flex;
+        align-items: center;
+        align-content: space-between;
+        justify-content: space-evenly;
+        margin: auto;
+        flex-wrap: wrap;
+        max-width: 800px;
+        padding-top: 15px ;
+        padding-bottom: 20px;
+        
+    }
+    #grid {
+    display: flex ;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100px ;
+    }
+
+    #grid span {
+        margin: 10px;
+        text-align: center;
+        display: block;
+    }
+
+    #grid a {
+        text-decoration: none;
+        color: #333;
+    }
+    
+    .item {
+        padding-bottom: 20px;
+    }
+</style>
+</html>
